@@ -4,7 +4,12 @@ Write a function named pluralize that:
 - Accepts two arguments: a noun (string) and a number (integer).
 - Returns a string combining the number and the appropriately pluralized form of the noun. The function should add an "s" to the noun if the number is not 1, such as "5 cats" or "1 dog".
  */
-
+function pluralize (a,b) {
+    if (b < 2){
+        return b + "" + a
+    }
+    return b + "" + a + "s"
+}
 
 // Sample usage - do not modify
 console.log(pluralize("cat", 5));  // Outputs: "5 cats"

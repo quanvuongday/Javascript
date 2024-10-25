@@ -2,10 +2,8 @@
 Refine the getFullName function so that it returns the person's full name by utilizing string interpolation.
  */
 
-function getFullName(firstName, lastName) {
-  console.log(firstName, lastName);
-
-  return `${firstName} ${lastName}`;
+function getFullName (a,b) {
+    return `${a} ${b}`
 }
 
 // Sample usage - do not modify

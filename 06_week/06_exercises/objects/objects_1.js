@@ -3,13 +3,17 @@
 Create an object named `person` with properties: `name` set to "Alex" and `age` set to 30.
 Log this object to the console.
 */
+let person = {name: 'Alex', age: 30}
 
+console.log(person)
 // Write your object here
 
 // Task 2: Accessing Object Properties
 /*
 Access and log the `name` and `age` from the `person` object.
 */
+console.log(person.name, person.age)
+console.log(`Name is ${person.name}, age is ${person.age}`)
 
 // Write your code here
 
@@ -19,7 +23,10 @@ Update the `person` object: set the `age` to 31. Then, add a new property `count
 Log the updated object.
 */
 
-// Write your code here
+person.age = 31
+person.country = "Canada"
+console.log(person)
+
 
 // Task 4: Nested Objects
 /*
@@ -28,15 +35,17 @@ Log the `course` of the `student`.
 Expected outcome: "Course: JavaScript"
 */
 
-// Write your object and code here
+const student = {name: "Emily", 
+    details : {age: 22, course: "Javascript"}}
+console.log(`Course: ${student.details.course}`)
 
 // Task 5: Deleting Properties
 /*
 From the `person` object, delete the `age` property. Log the resulting object.
 Expected outcome: { name: "Alex", country: "Canada" }
 */
-
-// Write your code here
+delete person.age
+console.log(person)
 
 // Task 6: Object Keys and Values
 /*
@@ -46,8 +55,8 @@ Keys: name, country
 Values: Alex, Canada
 */
 
-// Write your code here
-
+console.log(`Keys: ${Object.keys(person)}`)
+console.log(`Values: ${Object.values(person)}`)
 // Task 7: Using Object Methods
 /*
 Define a method inside the `person` object named `greet` that returns "Hello, my name is Alex".
@@ -56,3 +65,7 @@ Expected outcome: "Hello, my name is Alex"
 */
 
 // Modify your person object and write your method invocation here
+
+    person.greet = function() {console.log(`Hello, my name is ${this.name}`)}
+
+person.greet()

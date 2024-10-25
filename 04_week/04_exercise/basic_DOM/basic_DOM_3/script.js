@@ -1,7 +1,6 @@
 /* 
 Create functionality where an input field's value is continuously displayed and updated in a dedicated area on the page as the user types, using the onchange event.*/
 /* 
-
 Instructions:
 
 HTML:
@@ -18,3 +17,12 @@ The event listener's function should:
 - Retrieve the current value from the input field.
 - Update the textContent of the displayText <div> to match the input field's value.
 - To have the display update more dynamically (as the user types), consider using the input event instead of or in addition to the change event.  */
+
+const inputF = document.querySelector('#inputField')
+const display = document.querySelector('#displayText')
+
+function showtext () {
+    console.log(inputF.value)
+    display.textContent = inputF.value
+}
+display.addEventListener("input",showtext)

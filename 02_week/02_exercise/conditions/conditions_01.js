@@ -2,7 +2,7 @@
  Implement the function canVote such that it returns true if the age is 18 or above, and false if the age is below 18.
 */
 
-
+const canVote = (age) => age >= 18
 
 // Sample usage - do not modify
 console.log(canVote(20));  // Outputs: true

@@ -16,10 +16,15 @@ Hint: You will need to use `console.error()` to log the error details.
 
 function task1() {
   // Simulate error
+  try {
   throw new Error('Oops, something went wrong!');
+  }
+  catch (error) {
+    console.error('An error occurred:', error.message)
+  }
 }
 
-
+task1()
 
 // Task 2: Catching ReferenceError
 /*
@@ -35,10 +40,15 @@ Expected behavior:
 
 function task2() {
   // Code here
+try{
+console.log(tesk2)
+}
+catch (ReferenceError) {
+console.log('An error occurred:', ReferenceError.message)
+}
 }
 
-
-
+task2()
 // Task 3: Using Finally
 /*
 Task: Write a function that uses a try-catch-finally block. In the try block, simulate an error. 
@@ -53,9 +63,18 @@ Expected behavior:
 
 function task3() {
   // Code here
+  try{
+    console.log(task30)
+  }
+  catch (error) {
+    console.error('An error occurred during the operation:', error.message)
+  }
+  finally {
+    console.log('Execution completed.')
+  }
 }
 
-
+task3()
 // Task 4: Nested Try-Catch
 /*
 Task: Inside the `task4` function, write a try-catch block.

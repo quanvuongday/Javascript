@@ -6,4 +6,5 @@
 
 - Add comments in your code to explain what each operation does. */
 
+let a = 4, b = 5
 

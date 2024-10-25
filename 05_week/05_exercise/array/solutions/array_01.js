@@ -34,6 +34,8 @@ console.log(newArray.indexOf('Mike'));
 console.log(teamMembers.indexOf('Jake'));
 
 // Exercise 9: Use `splice` to remove "Mike" and add "Carol" and "Bruce" in his place.
+console.log(teamMembers);
+
 teamMembers.splice(2, 1, 'Carol', 'Bruce');
 console.log(teamMembers);
 

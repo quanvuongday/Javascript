@@ -7,7 +7,7 @@ function convertNumberToString(number) {
 
 function convertStringToNumber(string) {
     /*     return parseInt(string) */
-    return +string
+    return Number.parseInt(string,10)
 }
 
 // Sample usage - do not modify

@@ -9,3 +9,11 @@
 
 - Use the typeof operator to check the data type of each variable and print the result using console.log(). */
 
+let age = 24
+let name = "Quan"
+let isStudent = true
+let hobbies = ['coding', 'running', 'reading']
+let info = {schoolName : "HBC", grade : 5}
+
+console.log(age, name, isStudent, hobbies, info)
+console.log(typeof age, typeof name, typeof isStudent, typeof hobbies, typeof info)

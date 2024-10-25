@@ -2,7 +2,11 @@
 Refine the shoutMyName function to return the name parameter it receives, converted entirely to uppercase.
  */
 
-function shoutMyName(name) {}
+ const shoutMyName = (name) => name.toUpperCase()
+
+function shoutMyName (name) {
+    return name.toUpperCase()
+}
 
 // Sample usage - do not modify
 console.log(shoutMyName('Sam')); // "SAM"
